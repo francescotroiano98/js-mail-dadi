@@ -8,11 +8,7 @@ for (let i = 0; i <= mailList.length - 1; i++){
         console.log(i)
     
         alert("Puoi entrare")
-    }  else if (mailList[i] !== email)  { 
-
-        alert("DOVEVI PRENOTARE L'INGRESSO, NON PUOI ENTRARE");
-        
-        console.log(i)
+    }  else {
+        alert("Non puoi entrare")
     }
-
-}
+}   

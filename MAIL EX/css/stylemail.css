@@ -1,0 +1,5 @@
+else if (mailList[i] !== email)  { 
+
+    alert("DOVEVI PRENOTARE L'INGRESSO, NON PUOI ENTRARE");
+    
+    console.log(i)
