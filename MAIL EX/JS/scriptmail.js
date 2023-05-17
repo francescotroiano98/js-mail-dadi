@@ -1,14 +1,21 @@
-const mailList = ["francescototti10@gmail.com", "paulodybala21@gmail.com", "lionelmessi@gamil.com"];
+const mailListCalciatori = ["francescototti10@gmail.com", "paulodybala21@gmail.com", "lionelmessi@gamil.com"];
 
 const email = prompt("What's your email?");
+let mailcorretta = false;
+for (let i = 0; i <= mailListCalciatori.length - 1; i++){
 
-for (let i = 0; i <= mailList.length - 1; i++){
-
-    if (mailList[i] === email) {
+    if (mailListCalciatori[i] === email) {
         console.log(i)
-    
-        alert("Puoi entrare")
-    }  else {
-        alert("Non puoi entrare")
+        mailcorretta = true;
     }
+    
 }   
+if (mailcorretta){
+   
+    console.log(mailcorretta);
+    document.getElementById("enter").innerHTML = "Puoi entrare, sei nella mailListCalciatori"
+
+} else {
+   
+    document.getElementById("notenter").innerHTML = "Non puoi entrare, non sei nella mailListCalciatori"
+}    
