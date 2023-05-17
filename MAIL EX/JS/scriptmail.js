@@ -1,0 +1,1 @@
+const mail = ["francescototti10@gmail.com", "paulodybala21@gmail.com", "lionelmessi@gamil.com"];
